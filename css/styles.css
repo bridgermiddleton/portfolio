@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: #687864;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -36,20 +36,11 @@ h2 {
     padding-bottom: 0.5em;
 }
 
-#projects {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project {
-    flex: 1 1 calc(33.333% - 2em);
-    margin: 1em;
-    padding: 1em;
-    border: 1px solid #ddd;
+#projects .card {
     border-radius: 8px;
 }
 
-.project img {
-    max-width: 100%;
-    border-radius: 8px;
+#projects .card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }

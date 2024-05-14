@@ -4,46 +4,108 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="bg-dark text-white text-center py-5">
+      <div class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>A brief introduction about yourself.</p>
+    <section id="about" class="py-5" style="background-color: #f7f9fb">
+      <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="lead text-center">A brief introduction about yourself.</p>
+      </div>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <!-- Add project entries here -->
+    <section id="projects" class="py-5" style="background-color: #8fc1e3">
+      <div class="container">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row">
+          <!-- Add project entries here -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="images/project-image.png"
+                class="card-img-top"
+                alt="Project Image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Title</h5>
+                <p class="card-text">Description of the project.</p>
+                <a
+                  href="https://github.com/your-username/project-repo"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View Code</a
+                >
+                <a
+                  href="https://live-demo-link.com"
+                  class="btn btn-secondary"
+                  target="_blank"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Repeat similar blocks for more projects -->
+        </div>
+      </div>
     </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Email:
-        <a href="mailto:your-email@example.com">your-email@example.com</a>
-      </p>
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank"
-          >LinkedIn Profile</a
-        >
-      </p>
-      <p>
-        GitHub:
-        <a href="https://github.com/your-username" target="_blank"
-          >GitHub Profile</a
-        >
-      </p>
+    <section id="contact" class="py-5" style="background-color: #31708e">
+      <div class="container text-white text-center">
+        <h2 class="mb-4">Contact</h2>
+        <p>
+          Email:
+          <a href="mailto:your-email@example.com" class="text-white"
+            >your-email@example.com</a
+          >
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            class="text-white"
+            target="_blank"
+            >LinkedIn Profile</a
+          >
+        </p>
+        <p>
+          GitHub:
+          <a
+            href="https://github.com/your-username"
+            class="text-white"
+            target="_blank"
+            >GitHub Profile</a
+          >
+        </p>
+      </div>
     </section>
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
